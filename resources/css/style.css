@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+h1 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 240%;
+    text-transform: uppercase;
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(img/background-header.jpg);
+    color: #fff;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* NAVIGATION */
+.main-nav {
+    float: right;
+    margin-top: 60px;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-bottom: 2px;
+    color: #fff;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #16d081;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.header-text-box {
+    position: absolute;
+    width: 1140px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*SEARCH BAR*/
+.search-box {
+    width: 30%;
+    padding: 10px;
+    background: #16d081;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+::placeholder {
+    color: #07462b;
+    font-size: 90%;
+    font-weight: 400;
+}
+
+.search-box .search-bar {
+    width: 80%;
+    background: none;
+    border: none;
+    outline: none;
+    background: #16d081;
+    float: left;
+    margin-right: 10%;
+    color: #34495e;
+}
+
+.search-box .btn-search {
+    float: right;
+    width: 10%;
+    border-radius: 50%;
+    color: #34495e;
+    padding-left: 5px;
+}
+
+.search-box .btn-search i:link,
+.search-box .btn-search i:visited {
+    text-align: center;
+    font-size: 120%;
+    font-weight: 300;
+}
+
+.search-box .btn-search:hover,
+.search-box .btn-search:active {
+    color: #d35400;
+}
+
+/*ABOUT US*/
+h2 {
+    text-align: center;
+    font-weight: 350;
+    margin-bottom: 10px;
+    font-size: 200%;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #16d081;
+    content: " ";
+    width: 70px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-weight: 350;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-us-sec {
+    background-color: #eaffe7;
+}
+
+.about-us-sec p {
+    font-size: 95%;
+
+}
+
+.box {
+    padding: 1%;
+}
+
+.about-us-sec i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 250%;
+    color: #16d081;
+}
+
+/* TRAVEL IMAGE */
+.img-sec {
+    padding: 0;
+}
+
+.photo-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.photo-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.travel-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.travel-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.travel-photo img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/*TVER STORIES*/
+.story-sec {
+    padding: 50px 0;
+    background-color: #eaffe7;
+}
+
+.story-sec img {
+    width: 100%;
+    height: auto;
+}
+
+.story-sec a {
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.story-sec p {
+    margin-bottom: 10px;
+}
+
+.story-sec i {
+    display: inline-block;
+    width: 30px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #16d081;
+    font-size: 125%;
+}
+
+/* FEEDBACK SECTION */
+.feedback-sec {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(img/feedback.jpg);
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.feedback-sec img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback-sec h4 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 10px;
+}
+
+.feedback-sec p {
+    font-size: 90%;
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #1b1d1d;
+    color: #7c8787;
+    width: 100%;
+    padding: 30px 0;
+}
+
+footer img {
+    width: 50%;
+    height: auto;
+}
+
+footer i {
+    font-size: 120%;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+footer .nav-footer,
+footer .media-icon,
+footer .legal-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+footer .legal-info{
+    margin-bottom: 10px;
+}
+
+.nav-footer ul li a:link,
+.nav-footer ul li a:visited,
+.legal-info ul li a:link,
+.legal-info ul li a:visited {
+    text-decoration: none;
+    color: #7c8787;
+    transition: color 0.5s;
+}
+
+.nav-footer ul li a:hover,
+.nav-footer ul li a:active,
+.legal-info ul li a:hover,
+.legal-info ul li a:active {
+    text-decoration: none;
+    color: #f0f1f1;
+}
+
+.ion-social-facebook,
+.ion-social-whatsapp,
+.ion-social-instagram,
+.ion-social-twitter,
+.ion-social-googleplus {
+    color: #7c8787;
+    transition: color 0.5s;
+    font-size: 150%;
+    margin-right: 30px;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-whatsapp:hover {
+    color: #43d854;
+}
+
+.ion-social-instagram:hover {
+    color: #3f729b;
+}
+
+.ion-social-twitter:hover {
+    color: #55acee;
+}
+
+.ion-social-googleplus:hover {
+    color: #dc4e41;
+}

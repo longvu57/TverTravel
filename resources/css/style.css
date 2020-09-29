@@ -13,6 +13,7 @@ body {
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .clearfix {
@@ -26,6 +27,12 @@ body {
     display: block;
     height: 0;
     visibility: hidden;
+}
+
+section {
+    clear: both;
+    padding: 30px 0;
+    margin: 0px;
 }
 
 h1 {
@@ -43,10 +50,8 @@ header {
     height: 100vh;
     background-attachment: fixed;
 }
-
-.row {
-    width: 1140px;
-    margin: 0 auto;
+header .row{
+    padding: 0 2%;
 }
 
 /* NAVIGATION */
@@ -65,16 +70,32 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    display: block;
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     transition: border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
     padding-bottom: 5px;
     border-bottom: 2px solid #16d081;
+}
+
+/* MOBILE NAVIGATION */
+.mobile-nav {
+    float: right;
+    margin-top: 12%;
+    margin-right: 2%;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav i {
+    font-size: 170%;
+    color: #16d081;
 }
 
 .logo {
@@ -221,7 +242,6 @@ h3 {
 
 /*TVER STORIES*/
 .story-sec {
-    padding: 50px 0;
     background-color: #eaffe7;
 }
 
@@ -313,7 +333,8 @@ footer .legal-info {
     text-align: center;
     margin-bottom: 30px;
 }
-footer .legal-info{
+
+footer .legal-info {
     margin-bottom: 10px;
 }
 
@@ -363,4 +384,69 @@ footer .legal-info{
 
 .ion-social-googleplus:hover {
     color: #dc4e41;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+    .header-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    footer li {
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .header-text-box h1 {
+        font-size: 120%;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: inline-block;
+    }
+
+    .main-nav {
+        float: left;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: none;
+    }
+    .search-box{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .logo{
+        width: 50%;
+    }
 }
